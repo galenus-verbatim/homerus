@@ -1,0 +1,21 @@
+{
+    "name": "galenus-verbatim/homerus",
+    "description": "Verbatim demo with Homer corpus",
+    "authors": [
+        {
+            "name": "Frédéric Glorieux",
+            "email": "frederic.glorieux@fictif.org",
+            "role": "Developer"
+        },
+        {
+            "name": "Cahal Taaffe",
+            "role": "Developer"
+        }
+    ],
+    "type": "application",
+    "license": "MIT",
+    "require": {
+        "galenus-verbatim/verbatim": "dev-main"
+    },
+    "minimum-stability": "dev"
+}
