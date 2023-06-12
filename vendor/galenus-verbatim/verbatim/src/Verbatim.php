@@ -50,6 +50,17 @@ class Verbatim
     }
 
     /**
+     * Rewrite some links for win
+     */
+    static public function cts_href($cts)
+    {
+        $cts = ltrim($cts, ' ./');
+        $href = "./" . $cts;
+        if (self::$win) $href = Route::home_href() . str_replace('./urn:', './urn/', $href);
+        return $href;
+    }
+
+    /**
      * return the dir of this file, ueful for page file path
      */
     static public function dir()
@@ -148,10 +159,11 @@ class Verbatim
      */
     static private function antepost($key, &$doc, &$pars=array('q'))
     {
-        if (!isset($doc[$key]) || !$doc[$key]) return; 
+        if (!isset($doc[$key]) || !$doc[$key]) return;
+        $href = Verbatim::cts_href($doc[$key]);
         $qstring = Http::qstring($pars);
         $chars = array('ante' => '⟨', 'post' => '⟩');
-        echo '<a class="prevnext antepost ' . $key .'" href="' . $doc[$key] . $qstring . '">' . $chars[$key] .'</a>';
+        echo '<a class="prevnext antepost ' . $key .'" href="' . $href . $qstring . '">' . $chars[$key] .'</a>';
     }
 
     /**
@@ -262,10 +274,11 @@ class Verbatim
         if (!count($formids)) {
             $html = $editio['nav'];
             $html = preg_replace(
-                '@ href="' . $cts . '"@',
+                '@ href="[^"]*' . $cts . '"@',
                 '$1 class="selected"',
                 $html
             );
+            if (self::$win) $html = str_replace('./urn:', './', $html);
             return $html;
         }
         $in  = str_repeat('?,', count($formids) - 1) . '?';
@@ -298,6 +311,7 @@ class Verbatim
             },
             $editio['nav']
         );
+        if (self::$win) $html = str_replace('./urn:', './', $html);
         return $html;
     }
 
