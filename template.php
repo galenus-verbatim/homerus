@@ -26,7 +26,7 @@ if (@substr_compare($page, 'tlg', 0, strlen('tlg'))==0) {
         <div class="banner">
             <div class="titles">
                 <div class="title">Homerus Verbatim</div>
-                <div class="titlesub">😍So greek !</div>
+                <div class="titlesub">A PHP SQLite site to search ancient greek</div>
             </div>
             <div class="moto"><?= I18n::_('moto') ?></div>
             <img class="banner" src="<?= Route::home_href() ?>theme/banner.png" />

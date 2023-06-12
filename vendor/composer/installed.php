@@ -5,7 +5,7 @@
         'type' => 'application',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => 'e89c664bcef4af1964a285953110580b34e6951d',
+        'reference' => 'c9f03e2e79ae2a7a066cdc6f8f0274c0dbb6da5b',
         'name' => 'galenus-verbatim/homerus',
         'dev' => true,
     ),
@@ -16,7 +16,7 @@
             'type' => 'application',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => 'e89c664bcef4af1964a285953110580b34e6951d',
+            'reference' => 'c9f03e2e79ae2a7a066cdc6f8f0274c0dbb6da5b',
             'dev_requirement' => false,
         ),
         'galenus-verbatim/verbatim' => array(
@@ -27,7 +27,7 @@
             'aliases' => array(
                 0 => '9999999-dev',
             ),
-            'reference' => 'b5c1ec1814cf8cbe1e1f08a099db6e2003dfccd9',
+            'reference' => 'dfd0e4265e9d4da80c62d8ab4b71936989051e66',
             'dev_requirement' => false,
         ),
         'oeuvres/kit' => array(
@@ -38,7 +38,7 @@
             'aliases' => array(
                 0 => '9999999-dev',
             ),
-            'reference' => '5fccd778c8b0b94311ad55786bd36c3dbfc77f54',
+            'reference' => 'ddff3e09688a077b569980ba0922b1995e0f9637',
             'dev_requirement' => false,
         ),
         'psr/log' => array(

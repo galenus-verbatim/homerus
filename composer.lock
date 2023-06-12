@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/galenus-verbatim/verbatim.git",
-                "reference": "b5c1ec1814cf8cbe1e1f08a099db6e2003dfccd9"
+                "reference": "dfd0e4265e9d4da80c62d8ab4b71936989051e66"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/galenus-verbatim/verbatim/zipball/b5c1ec1814cf8cbe1e1f08a099db6e2003dfccd9",
-                "reference": "b5c1ec1814cf8cbe1e1f08a099db6e2003dfccd9",
+                "url": "https://api.github.com/repos/galenus-verbatim/verbatim/zipball/dfd0e4265e9d4da80c62d8ab4b71936989051e66",
+                "reference": "dfd0e4265e9d4da80c62d8ab4b71936989051e66",
                 "shasum": ""
             },
             "require": {
@@ -57,7 +57,7 @@
                 "issues": "https://github.com/galenus-verbatim/verbatim/issues",
                 "source": "https://github.com/galenus-verbatim/verbatim/tree/main"
             },
-            "time": "2023-03-18T22:22:16+00:00"
+            "time": "2023-06-12T16:15:17+00:00"
         },
         {
             "name": "oeuvres/kit",
@@ -65,12 +65,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/oeuvres/kit.git",
-                "reference": "5fccd778c8b0b94311ad55786bd36c3dbfc77f54"
+                "reference": "ddff3e09688a077b569980ba0922b1995e0f9637"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/oeuvres/kit/zipball/5fccd778c8b0b94311ad55786bd36c3dbfc77f54",
-                "reference": "5fccd778c8b0b94311ad55786bd36c3dbfc77f54",
+                "url": "https://api.github.com/repos/oeuvres/kit/zipball/ddff3e09688a077b569980ba0922b1995e0f9637",
+                "reference": "ddff3e09688a077b569980ba0922b1995e0f9637",
                 "shasum": ""
             },
             "require": {
@@ -113,7 +113,7 @@
                 "issues": "https://github.com/oeuvres/kit/issues",
                 "source": "https://github.com/oeuvres/kit/tree/main"
             },
-            "time": "2023-02-08T16:34:16+00:00"
+            "time": "2023-05-23T23:12:29+00:00"
         },
         {
             "name": "psr/log",

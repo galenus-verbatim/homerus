@@ -11,7 +11,7 @@ require_once(__DIR__ . "/Verbatim.php");
 use Oeuvres\Kit\{I18n};
 use GalenusVerbatim\Verbatim\{Verbatim};
 
-function main() {
+$main = function() {
     $href = 'conc?f=lem&amp;q=%s';
     echo '
 <article class="table">
@@ -20,7 +20,7 @@ function main() {
     <thead>
         <tr>
             <th></th>
-            <th>'. I18n::_('editio.clavis') .'</th>
+            <th>'. I18n::_('editio.cts') .'</th>
             <th>'. I18n::_('editio.auctor') .'</th>
             <th>'. I18n::_('editio.titulus') .'</th>
             <th>'. I18n::_('editio.editor') .'</th>
@@ -30,15 +30,17 @@ function main() {
     <thead>
     <tbody>
 ';
-    $sql = "SELECT clavis, auctor, titulus, editor, volumen, annuspub FROM editio";
+    $sql = "SELECT cts, auctor, titulus, editor, volumen, annuspub FROM editio";
     $q = Verbatim::$pdo->prepare($sql);
     $q->execute();
     $i = 1;
     while ($row = $q->fetch(PDO::FETCH_ASSOC)) {
+        $href = './' . $row['cts'];
+        if (Verbatim::win()) $href = str_replace('./urn:', './urn/', $href);
         echo  '
         <tr>
             <td class="no">' . $i++ . '</td>
-            <td class="clavis"><a href="' . $row['clavis'] . '">' . $row['clavis'] . '</a></td> 
+            <td class="cts"><a href="' . $href . '">' . $row['cts'] . '</a></td> 
             <td>' . $row['auctor'] . '</td>
             <td>' . $row['titulus'] . '</td>
             <td>' . $row['editor'] . '</td>

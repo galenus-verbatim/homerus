@@ -12,7 +12,7 @@ use GalenusVerbatim\Verbatim\{Verbatim};
 
 
 // suppose clean URL, mabe better should be done
-function main()
+$main = function()
 {
     $q = Http::par('q');
     // sanitize for display
@@ -77,9 +77,9 @@ function main()
             $qed->execute(array($doc['editio']));
             $editio = $qed->fetch(PDO::FETCH_ASSOC);
             // here URL are supposed clean
-            $href = '%s?q=%s';
+            $href = './%s?q=%s';
             echo '<h4 class="doc">'
-                . '<a href="' . sprintf($href, $doc['clavis'], $qprint) . '">'
+                . '<a href="' . sprintf($href, $doc['cts'], $qprint) . '">'
                 . Verbatim::bibl($editio, $doc)
                 . "</a>"
                 . "</h4>\n"
@@ -103,5 +103,5 @@ function main()
     }
     echo "</div>\n";
 
-}
+};
 ?>

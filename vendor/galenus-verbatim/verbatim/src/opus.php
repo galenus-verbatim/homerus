@@ -11,10 +11,10 @@ require_once(__DIR__ . "/Verbatim.php");
 use Oeuvres\Kit\{I18n,Http};
 use GalenusVerbatim\Verbatim\{Verbatim};
 
-function main() {
+$main = function() {
     $q = Http::par('q');
     $cts = Http::par('cts');
-    $sql = "SELECT * FROM opus WHERE clavis = ? LIMIT 1";
+    $sql = "SELECT * FROM opus WHERE cts = ? LIMIT 1";
     $qDoc = Verbatim::$pdo->prepare($sql);
     $qDoc->execute(array($cts));
     $doc = $qDoc->fetch(PDO::FETCH_ASSOC);
