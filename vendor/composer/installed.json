@@ -7,12 +7,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/galenus-verbatim/verbatim.git",
-                "reference": "dfd0e4265e9d4da80c62d8ab4b71936989051e66"
+                "reference": "fcdbd067eed5e251469740485368fd9c347b2b84"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/galenus-verbatim/verbatim/zipball/dfd0e4265e9d4da80c62d8ab4b71936989051e66",
-                "reference": "dfd0e4265e9d4da80c62d8ab4b71936989051e66",
+                "url": "https://api.github.com/repos/galenus-verbatim/verbatim/zipball/fcdbd067eed5e251469740485368fd9c347b2b84",
+                "reference": "fcdbd067eed5e251469740485368fd9c347b2b84",
                 "shasum": ""
             },
             "require": {
@@ -21,7 +21,7 @@
                 "oeuvres/kit": "dev-main",
                 "php": ">=7.2"
             },
-            "time": "2023-06-12T16:15:17+00:00",
+            "time": "2023-06-14T01:07:40+00:00",
             "default-branch": true,
             "type": "library",
             "installation-source": "dist",
